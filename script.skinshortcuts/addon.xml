@@ -1,39 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<addons>
-
-<addon id="repository.carpc" name="[COLOR green]CarPc[/COLOR] Add-ons" version="1.0.0" provider-name="carpc">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0"/>
-        </requires>
-        <extension point="xbmc.addon.repository" name="[COLOR green]CarPc[/COLOR] Add-ons">
-            <info compressed="false">https://github.com/boxbillinggit/repository.carpc/raw/master/addons.xml</info>
-            <checksum>https://github.com/boxbillinggit/repository.carpc/raw/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://github.com/boxbillinggit/repository.carpc/raw/master/</datadir>
-            <hashes>false</hashes>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Instalacja dodatku CarPc</summary>
-            <description>Pobierz i zainstaluj dodatki CarPc</description>
-            <platform>all</platform>
-    </extension>
-</addon>
-    
-<addon id="skin.unity" version="0.6.0" name="Unity BMW" provider-name="Jezz_X, Team XBMC">
-  <requires>
-    <import addon="xbmc.gui" version="3.00" />
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension point="xbmc.gui.skin" defaultthemename="textures.xbt" debugging="false" effectslowdown="0.75">
-    <res width="1280" height="720" aspect="16:9" default="true" folder="1080i" />
-  </extension>
-  <extension point="xbmc.service" library="scripts/service.playerstate.py" start="login" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="pl">Zmodyfikowany styl Unity</summary>
-    <description lang="pl">zmodyfikowany styl Unity podmieniający skórke confluence-vertical</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-    
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.skinshortcuts" name="Skin Shortcuts" version="1.0.10" provider-name="BigNoid,marcelveldt">
 	<requires>
 		<import addon="xbmc.python" version="2.20.0"/>
@@ -78,4 +43,3 @@
 		<fanart>fanart.jpg</fanart>
 	</assets>
 </addon>
-</addons>
