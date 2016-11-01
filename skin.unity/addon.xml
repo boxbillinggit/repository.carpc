@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon id="skin.unity" version="0.6.0" name="Unity BMW" provider-name="Jezz_X, CarPc, Team XBMC">
+  <requires>
+    <import addon="xbmc.gui" version="3.00" />
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.gui.skin" defaultthemename="textures.xbt" debugging="false" effectslowdown="0.75">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="1080i" />
+  </extension>
+  <extension point="xbmc.service" library="scripts/service.playerstate.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="pl">Zmodyfikowany styl Unity</summary>
+    <description lang="pl">zmodyfikowany styl Unity podmieniający skórke confluence-vertical</description>
+    <platform>all</platform>
+  </extension>
+</addon>
