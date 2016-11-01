@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <addon id="repository.carpc" name="[COLOR green]CarPc[/COLOR] Add-ons" version="1.0.0" provider-name="CarPc">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="[COLOR green]CarPc[/COLOR] Add-ons">
+            <info compressed="false">https://github.com/boxbillinggit/repository.carpc/raw/master/addons.xml</info>
+            <checksum>https://github.com/boxbillinggit/repository.carpc/raw/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/boxbillinggit/repository.carpc/raw/master/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Instalacja dodatku CarPc</summary>
+            <description>Pobierz i zainstaluj dodatki CarPc</description>
+            <platform>all</platform>
+    </extension>
+</addon>
