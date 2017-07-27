@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <setting id="temp_run_fan" type="labelenum" values="50|55|60" label="Min temp do włączenia" default="50" />
+  <setting id="overhot" type="bool" label="Zabl. możliwość przegrzania" default="false" />
+  <setting id="pinnumber" type="labelenum" values="23|25|27" label="Pin Sterowania Wentylatora" default="23" />
+</settings>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.rpifancontrol" name="Bmw Fan Control" version="1.0.1" provider-name="Jarek">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="pl">BMW Odczyt Wentylatora</summary>
+		<description lang="pl">Wentylator.</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<forum>#</forum>
+		<source>#</source>
+		<website>#</website>
+		<email>zaba141@o2.pl</email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+		</assets>
+		<news>Nichts neues</news>
+	</extension>
+</addon>

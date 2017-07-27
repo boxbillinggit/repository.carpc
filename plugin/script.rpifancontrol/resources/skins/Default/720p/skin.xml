@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1125" type="winow">
+  <!--<onload>RunScript(script.foobar)</onload>
+  <onunload>SetProperty(foo,bar)</onunload>-->
+  <defaultcontrol always="false">2</defaultcontrol>
+  <menucontrol>9000</menucontrol>
+  <views>50,51,509,510</views>
+  <visible>Window.IsActive(Home)</visible>
+  <animation effect="fade" time="100">WindowOpen</animation>
+  <animation effect="slide" end="0,576" time="100">WindowClose</animation>
+  <zorder>1</zorder>
+  <coordinates>
+    <origin x="100" y="50">Window.IsActive(Home)</origin>
+  </coordinates>
+  <controls>
+    <control>
+    </control>
+	  
+<control type="image" id="1">
+      <description>My first image control</description>
+      <width>100%</width>
+      <height>100%</height>
+      <visible>true</visible>
+      <colordiffuse>FFFFFFFF</colordiffuse>
+      <fadetime>200</fadetime>
+      <texture background="true">fanart.jpg</texture>
+</control>
+	  
+<control type="button" id="5005">
+    <description>Custom Action</description>
+    <posx>380</posx>
+    <posy>210</posy>
+    <width>230</width>
+    <height>35</height>
+    <label>Uruchom Wentylator</label>
+    <align>center</align>
+    <aligny>center</aligny>
+    <onclick></onclick>
+</control>
+
+	  
+	  <control type="group" id="3">
+		  <description>My first group control</description>
+		  <width>100%</width>
+		  <height>300</height>
+		  <defaultcontrol>2</defaultcontrol>
+		  <visible>true</visible>
+		  <onup>2</onup>
+		  <ondown>3</ondown>
+		  <onleft>1</onleft>
+		  <onright>1</onright>
+		  
+			 <control type="label" id="99">
+					<label></label>
+					<description>BMW READ ERROR</description>
+					<top>10</top>
+					<width min="29" max="100%">auto</width>
+					<visible>true</visible>
+					<align>center</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<number></number>
+					<haspath>false</haspath>
+					<font>font_MainMenu</font>
+					<textcolor>ffffffff</textcolor>
+					<shadowcolor>ff000000</shadowcolor>
+					<wrapmultiline>false</wrapmultiline>
+					<scrollspeed>0</scrollspeed>
+					<scrollsuffix> - </scrollsuffix>
+			  </control>
+		  
+		  	<control type="label" id="100">
+					<label></label>
+					<description>BMW READ ERROR</description>
+					<top>100</top>
+					<left>50</left>
+					<width min="29" max="100%">auto</width>
+					<visible>true</visible>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<number></number>
+					<haspath>false</haspath>
+					<font>font30_title</font>
+					<textcolor>ffffffff</textcolor>
+					<shadowcolor>ff000000</shadowcolor>
+					<wrapmultiline>true</wrapmultiline>
+					<scrollspeed>0</scrollspeed>
+					<scrollsuffix> - </scrollsuffix>
+		    </control>
+		    <control type="label" id="101">
+					<label></label>
+					<description>Temperatura Procka</description>
+					<top>100</top>
+					<right>50</right>
+					<width min="130" max="100%">auto</width>
+					<visible>true</visible>
+					<align>right</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<number></number>
+					<haspath>false</haspath>
+					<font>font28_title</font>
+					<textcolor>orange</textcolor>
+					<shadowcolor>ff000000</shadowcolor>
+					<wrapmultiline>true</wrapmultiline>
+					<scrollspeed>0</scrollspeed>
+					<scrollsuffix> - </scrollsuffix>
+		    </control>
+		  
+		    <control type="label" id="102">
+					<label></label>
+					<description>BMW READ ERROR</description>
+					<top>150</top>
+					<left>50</left>
+					<width min="29" max="100%">auto</width>
+					<visible>true</visible>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<number></number>
+					<haspath>false</haspath>
+					<font>font30_title</font>
+					<textcolor>ffffffff</textcolor>
+					<shadowcolor>ff000000</shadowcolor>
+					<wrapmultiline>true</wrapmultiline>
+					<scrollspeed>0</scrollspeed>
+					<scrollsuffix> - </scrollsuffix>
+		    </control>
+		    <control type="label" id="103">
+					<label></label>
+					<description>Czy Pracuje ?</description>
+					<top>165</top>
+					<right>50</right>
+					<width min="29" max="100%">auto</width>
+					<visible>true</visible>
+					<align>right</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<number></number>
+					<haspath>false</haspath>
+					<font>font28_title</font>
+					<textcolor>orange</textcolor>
+					<shadowcolor>ff000000</shadowcolor>
+					<wrapmultiline>true</wrapmultiline>
+					<scrollspeed>0</scrollspeed>
+					<scrollsuffix> - </scrollsuffix>
+		    </control>
+
+			
+		  </control>
+    
+  </controls>
+</window>
