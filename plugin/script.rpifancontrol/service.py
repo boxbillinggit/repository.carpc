@@ -16,7 +16,7 @@ TEMP            = "sudo cat /sys/class/thermal/thermal_zone0/temp | awk 'NR == 1
 FANSTATUS       = commands.getoutput("sudo cat /sys/class/gpio/gpio23/value")
 pinnumber       = addon.getSetting('pinnumber')
 temp_run_fan    = addon.getSetting('temp_run_fan')
-debugis           = addon.getSetting('debug')
+debugis         = addon.getSetting('debug')
 
 #OPCJE URUCHAMIAJĄCE WENTYLATOR AUTOMATYCZNIE.
 
@@ -29,7 +29,7 @@ def zaladuj():
 	os.popen('sudo chmod 777 /sys/class/gpio/gpio23/value')
 
 def info():
-	if debugis == true:
+	if debugis == True:
 		xbmc.executebuiltin('Notification(OK,Uruchamiam sterowanie,5000,/script.hellow.world.png)')
 
 def main():
@@ -42,7 +42,7 @@ def main():
 			xbmc.executebuiltin('Notification(Ohh,Nie działa,5000,/script.hellow.world.png)')
 			break
 		GETFAN_STATUS   = commands.getoutput(TEMP)
-		if debugis == true:
+		if debugis == True:
 			xbmc.log("Temperatura Procesora: %s" % GETFAN_STATUS, level=xbmc.LOGNOTICE)
 		os.popen('sudo chmod 777 /sys/class/gpio/gpio23/value')
 		
