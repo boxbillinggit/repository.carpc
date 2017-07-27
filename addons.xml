@@ -80,7 +80,7 @@
   </extension>
 </addon>
 	
-<addon id="script.rpifancontrol" name="Bmw Fan Control" version="1.0.1" provider-name="Jarek">
+<addon id="script.rpifancontrol" name="Bmw Fan Control" version="1.0.2" provider-name="Jarek">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 	</requires>
