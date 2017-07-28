@@ -12,11 +12,13 @@ from subprocess import Popen,PIPE,STDOUT,call
 
 addon       	= xbmcaddon.Addon()
 addonname 		= addon.getAddonInfo('name')
+ADDONPATH       = addon.getAddonInfo('path')
 TEMP            = "sudo cat /sys/class/thermal/thermal_zone0/temp | awk 'NR == 1 { print $1 / 1000}' | cut -c -4"
 FANSTATUS       = commands.getoutput("sudo cat /sys/class/gpio/gpio23/value")
 pinnumber       = addon.getSetting('pinnumber')
 temp_run_fan    = addon.getSetting('temp_run_fan')
 debugis         = addon.getSetting('debug')
+ICON = os.path.join(ADDONPATH, 'icon.png')
 
 #OPCJE URUCHAMIAJĄCE WENTYLATOR AUTOMATYCZNIE.
 
@@ -28,9 +30,18 @@ def zaladuj():
 	os.popen('sudo echo "out" > /sys/class/gpio/gpio23/direction')
 	os.popen('sudo chmod 777 /sys/class/gpio/gpio23/value')
 
+def log(string):
+    return xbmc.log('BMW RPI FAN: %s' % string, xbmc.LOGNOTICE)	
+
+def note(heading, message = None, time = 5000):
+    import xbmcgui
+    xbmcgui.Dialog().notification(heading='%s' % heading, message='%s' % message if message else '', icon=ICON, time=time)
+    log('BMW RPI FAN NOTIFICATION: "%s%s"' % (heading, ' - %s' % message if message else ''))
+
 def info():
-	if debugis == True:
-		xbmc.executebuiltin('Notification(OK,Uruchamiam sterowanie,5000,/script.hellow.world.png)')
+	xbmc.log("Ustawienia Załadowane Wentylatora: %s" % debugis, level=xbmc.LOGNOTICE)
+	if debugis == 'true':
+		note('No Ni da rady Uruchomić')
 
 def main():
 	monitor = xbmc.Monitor()
@@ -42,7 +53,7 @@ def main():
 			xbmc.executebuiltin('Notification(Ohh,Nie działa,5000,/script.hellow.world.png)')
 			break
 		GETFAN_STATUS   = commands.getoutput(TEMP)
-		if debugis == True:
+		if debugis == 'true':
 			xbmc.log("Temperatura Procesora: %s" % GETFAN_STATUS, level=xbmc.LOGNOTICE)
 		os.popen('sudo chmod 777 /sys/class/gpio/gpio23/value')
 		
@@ -57,4 +68,5 @@ def main():
 
 if __name__ == '__main__':
 	zaladuj()
+	info()
 	main()
