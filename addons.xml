@@ -80,7 +80,7 @@
   </extension>
 </addon>
 	
-<addon id="script.rpifancontrol" name="Bmw Fan Control" version="1.0.2" provider-name="Jarek">
+<addon id="script.rpifancontrol" name="Bmw Fan Control" version="1.0.3" provider-name="Jarek">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 	</requires>
@@ -88,23 +88,13 @@
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="login"/>
-	<extension point="xbmc.addon.repository">
-		<dir minversion="1.0.2">
-			<datadir zip="true">https://github.com/boxbillinggit/repository.carpc/tree/master/script.rpifancontrol</datadir>
-			<hashes>true</hashes>
-		</dir>
-		<dir minversion="1.0.3">
-			<datadir zip="true">https://github.com/boxbillinggit/repository.carpc/tree/master/script.rpifancontrol</datadir>
-			<hashes>true</hashes>
-		</dir>
-	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="pl">BMW Odczyt Wentylatora</summary>
-		<description lang="pl">Wentylator.</description>
+		<description lang="pl">Sterowanie Wentylatorem za pomocą Tranzystora 2N2222</description>
 		<license>GNU General Public License, v2</license>
 		<language></language>
-		<forum>#</forum>
+		<forum>http://www.rpicar.pl/</forum>
 		<source>https://github.com/boxbillinggit/repository.carpc/tree/master/script.rpifancontrol</source>
 		<website>#</website>
 		<email>zaba141@o2.pl</email>
@@ -115,7 +105,7 @@
 			<screenshot>resources/screenshot-02.jpg</screenshot>
 			<screenshot>resources/screenshot-03.jpg</screenshot>
 		</assets>
-		<news>Nichts neues</news>
+		<news>Poprawiono Debugowanie</news>
 	</extension>
 	<extension point="xbmc.addon.metadata">
     <summary lang="pl">Zarządzanie wentylatorem</summary>
