@@ -41,7 +41,7 @@ def note(heading, message = None, time = 5000):
 def info():
 	xbmc.log("Ustawienia Załadowane Wentylatora: %s" % debugis, level=xbmc.LOGNOTICE)
 	if debugis == 'true':
-		note('No Ni da rady Uruchomić')
+		note('Uruchamiam Kontrole Wentylatora')
 
 def main():
 	monitor = xbmc.Monitor()

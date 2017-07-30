@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.rpifancontrol" name="Bmw Fan Control" version="1.0.2" provider-name="Jarek">
+<addon id="script.rpifancontrol" name="Bmw Fan Control" version="1.0.3" provider-name="Jarek">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 	</requires>
@@ -10,12 +10,12 @@
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="pl">BMW Odczyt Wentylatora</summary>
-		<description lang="pl">Sterowanie wentylatorem do rpi3 sterowany tranzystorem 2n2222.</description>
+		<description lang="pl">Sterowanie wentylatorem za pomocą tranzystora 2N2222.</description>
 		<license>GNU General Public License, v2</license>
 		<language></language>
-		<forum>#</forum>
+		<forum>http://www.rpicar.pl/</forum>
 		<source>#</source>
-		<website>#</website>
+		<website>http://www.rpicar.pl/</website>
 		<email>zaba141@o2.pl</email>
 		<assets>
 			<icon>icon.png</icon>
